@@ -1,0 +1,8 @@
+vlan_id: 100
+vlan_name: PROD_VLAN
+
+ntp_servers:
+  - 10.1.1.10
+  - 10.1.1.11
+
+dns_server: 8.8.8.8
