@@ -1,0 +1,13 @@
+hostname {{ inventory_hostname }}
+
+vlan {{ vlan_id }}
+ name {{ vlan_name }}
+
+ip name-server {{ dns_server }}
+
+{% for ntp in ntp_servers %}
+ntp server {{ ntp }}
+{% endfor %}
+
+logging buffered 10000
+service timestamps log datetime
