@@ -1,1 +1,8 @@
 ---
+- name: configure cisco routers
+  hosts: routers
+  connection: ansible.netcommon.network_cli
+  gather_facts: false
+
+  roles:
+    - system_demo
